@@ -1,6 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FEF7FF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_AI"
+            android:layout_width="244dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="92dp"
+            android:backgroundTint="#F2E2F8"
+            android:fontFamily="@font/mitme"
+            android:text="AI 진단하기"
+            android:textAlignment="center"
+            android:textColor="#FAF8FA"
+            android:textSize="34sp"
+            app:cornerRadius="0.3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_dic"
+            android:layout_width="244dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="84dp"
+            android:backgroundTint="#F2E2F8"
+            android:fontFamily="@font/mitme"
+            android:text="스프톡 사전"
+            android:textAlignment="center"
+            android:textColor="#FAF8FA"
+            android:textSize="34sp"
+            app:cornerRadius="0.3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="244dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="84dp"
+            android:backgroundTint="#F2E2F8"
+            android:fontFamily="@font/mitme"
+            android:text="피부과 지도"
+            android:textAlignment="center"
+            android:textColor="#FAF8FA"
+            android:textSize="34sp"
+            app:cornerRadius="0.3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_myinfo"
+            android:layout_width="244dp"
+            android:layout_height="76dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#F2E2F8"
+            android:fontFamily="@font/mitme"
+            android:text="Mypage"
+            android:textColor="#FAF8FA"
+            android:textSize="34sp"
+            app:cornerRadius="0.3dp" />
+    </LinearLayout>
+
+</LinearLayout>
+

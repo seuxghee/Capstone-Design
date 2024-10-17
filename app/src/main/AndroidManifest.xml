@@ -24,6 +24,10 @@
         </activity>
         <activity android:name=".LoginActivity"/>
         <activity android:name=".HomeActivity"/>
+        <activity android:name=".CameraActivity"/>
+        <activity android:name=".DictionaryActivity"/>
+        <activity android:name=".MapActivity"/>
+        <activity android:name=".MyinfoActivity"/>
     </application>
 
 </manifest>
