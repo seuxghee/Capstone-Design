@@ -1,5 +1,6 @@
 package com.cookandroid.capstonedesign;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -23,9 +24,7 @@ public class LoginActivity extends AppCompatActivity {
         btn_login = (Button) findViewById(R.id.btn_login);
         btn_register = (Button) findViewById(R.id.btn_register);
 
-       //로그인 버튼
-        Button btn_register = (Button) findViewById(R.id.btn_register);
-
+        //로그인 버튼
         btn_login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -34,10 +33,10 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
        //회원가입 버튼
-        btn_register.setOnClickListener(new View.OnClickListener(){
+        btn_register .setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MemberActivity.class);
                 startActivity(intent);
             }
         });

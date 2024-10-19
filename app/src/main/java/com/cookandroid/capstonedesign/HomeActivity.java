@@ -18,10 +18,10 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Button btn_AI = (Button) findViewById(R.id.btn_AI);
-        Button btn_dic = (Button) findViewById(R.id.btn_dic);
-        Button btn_map = (Button) findViewById(R.id.btn_map);
-        Button btn_myinfo = (Button) findViewById(R.id.btn_myinfo);
+         btn_AI = (Button) findViewById(R.id.btn_AI);
+         btn_dic = (Button) findViewById(R.id.btn_dic);
+         btn_map = (Button) findViewById(R.id.btn_map);
+         btn_myinfo = (Button) findViewById(R.id.btn_myinfo);
 
         //AI카메라 액티비티로 이동
         btn_AI.setOnClickListener(new View.OnClickListener(){
