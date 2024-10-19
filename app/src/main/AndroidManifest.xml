@@ -34,6 +34,11 @@
         <activity android:name=".MapActivity"/>
         <activity android:name=".MyinfoActivity"/>
         <activity android:name=".MemberActivity"/>
+        <activity android:name=".AcneActivity"/>
+        <activity android:name=".UrticariaActivity"/>
+        <activity android:name=".AllergyActivity"/>
+        <activity android:name=".EczemaActivity"/>
+        <activity android:name=".FootActivity"/>
     </application>
 
 </manifest>
