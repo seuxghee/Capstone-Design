@@ -15,7 +15,7 @@ public class QAActivity extends AppCompatActivity {
         setContentView(R.layout.activity_qa);
 
         btn_Back5 = (Button) findViewById(R.id.btn_Back5);
-
+        //화면 이동
         btn_Back5.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
