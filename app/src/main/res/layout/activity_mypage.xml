@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEF7FF"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".MypageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/mitme"
+            android:text="스프톡"
+            android:textAlignment="center"
+            android:textColor="#F2E2F8"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mitme"
+            android:text="MyPage"
+            android:textAlignment="center"
+            android:textColor="#F2E2F8"
+            android:textSize="48sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="373dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/icon1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/mitme"
+            android:text="name: "
+            android:textColor="#F2E2F8"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/mitme"
+            android:text="E-mail:"
+            android:textColor="#F2E2F8"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_Myinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#F2E2F8"
+            android:text="Myinfo"
+            android:textColor="#FAF8FA"
+            android:textSize="24sp"
+            app:cornerRadius="0.3dp" />
+
+        <Button
+            android:id="@+id/btn_QA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F2E2F8"
+            android:text="QA"
+            android:textColor="#FAF8FA"
+            android:textSize="24sp"
+            app:cornerRadius="0.3dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_Back2"
+            android:layout_width="77dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#FAF8FA"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="◀"
+            android:textColor="#F2E2F8"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="35dp" />
+    </LinearLayout>
+
+</LinearLayout>
