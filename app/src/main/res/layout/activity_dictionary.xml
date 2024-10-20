@@ -9,90 +9,6 @@
     tools:context=".DictionaryActivity">
 
     <Button
-        android:id="@+id/btn_Back"
-        android:layout_width="66dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#FAF8FA"
-        android:gravity="center"
-        android:singleLine="false"
-        android:text="◀"
-        android:textColor="#F2E2F8"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="20dp" />
-
-    <Button
-        android:id="@+id/btn_Acne"
-        android:layout_width="240dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="56dp"
-        android:backgroundTint="#F2E2F8"
-        android:fontFamily="@font/mitme"
-        android:gravity="center"
-        android:text="1. 여드름"
-        android:textAlignment="center"
-        android:textColor="#FAF8FA"
-        android:textSize="40sp"
-        app:cornerRadius="0.3dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <Button
-        android:id="@+id/btn_Urticaria"
-        android:layout_width="240dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="48dp"
-        android:backgroundTint="#F2E2F8"
-        android:fontFamily="@font/mitme"
-        android:gravity="center"
-        android:text="2. 두드러기"
-        android:textColor="#FAF8FA"
-        android:textSize="40sp"
-        app:cornerRadius="0.3dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Acne" />
-
-    <Button
-        android:id="@+id/btn_Allergy"
-        android:layout_width="240dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="48dp"
-        android:backgroundTint="#F2E2F8"
-        android:fontFamily="@font/mitme"
-        android:gravity="center"
-        android:text="3. 알레르기"
-        android:textAlignment="center"
-        android:textColor="#FAF8FA"
-        android:textSize="40sp"
-        app:cornerRadius="0.3dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Urticaria" />
-
-    <Button
-        android:id="@+id/btn_eczema"
-        android:layout_width="240dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="48dp"
-        android:backgroundTint="#F2E2F8"
-        android:fontFamily="@font/mitme"
-        android:gravity="center"
-        android:text="4. 습진"
-        android:textAlignment="center"
-        android:textColor="#FAF8FA"
-        android:textSize="40sp"
-        app:cornerRadius="0.3dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Allergy" />
-
-    <Button
         android:id="@+id/btn_foot"
         android:layout_width="240dp"
         android:layout_height="61dp"
@@ -109,13 +25,48 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_eczema"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.01" />
+
+    <Button
+        android:id="@+id/btn_Acne"
+        android:layout_width="240dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#F2E2F8"
+        android:fontFamily="@font/mitme"
+        android:gravity="center"
+        android:text="1. 여드름"
+        android:textAlignment="center"
+        android:textColor="#FAF8FA"
+        android:textSize="40sp"
+        app:cornerRadius="0.3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/btn_eczema"
+        android:layout_width="240dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#F2E2F8"
+        android:fontFamily="@font/mitme"
+        android:gravity="center"
+        android:text="4. 습진"
+        android:textAlignment="center"
+        android:textColor="#FAF8FA"
+        android:textSize="40sp"
+        app:cornerRadius="0.3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Allergy" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="273dp"
         android:layout_height="55dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/mitme"
         android:gravity="center"
         android:text="스 프 톡 사 전"
@@ -125,5 +76,55 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Urticaria"
+        android:layout_width="240dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#F2E2F8"
+        android:fontFamily="@font/mitme"
+        android:gravity="center"
+        android:text="2. 두드러기"
+        android:textColor="#FAF8FA"
+        android:textSize="40sp"
+        app:cornerRadius="0.3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Acne" />
+
+    <Button
+        android:id="@+id/btn_Allergy"
+        android:layout_width="240dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#F2E2F8"
+        android:fontFamily="@font/mitme"
+        android:gravity="center"
+        android:text="3. 알레르기"
+        android:textAlignment="center"
+        android:textColor="#FAF8FA"
+        android:textSize="40sp"
+        app:cornerRadius="0.3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Urticaria" />
+
+    <Button
+        android:id="@+id/btn_Back"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FAF8FA"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="◀"
+        android:textColor="#F2E2F8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
