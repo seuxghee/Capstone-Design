@@ -109,7 +109,7 @@
             android:id="@+id/btn_Back2"
             android:layout_width="77dp"
             android:layout_height="74dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="81dp"
             android:backgroundTint="#FAF8FA"
             android:gravity="center"
             android:singleLine="false"

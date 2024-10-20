@@ -26,7 +26,7 @@ public class MyinfoActivity extends AppCompatActivity {
         txt_Email = (EditText) findViewById(R.id.txt_Email);
         txt_Password = (EditText) findViewById(R.id.txt_Password);
         txt_PasswordCrm = (EditText) findViewById(R.id.txt_PasswordCrm);
-
+        //뒤로가기 버튼
         btn_Back3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -34,6 +34,7 @@ public class MyinfoActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //초기화 버튼
         btn_Reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -35,6 +35,7 @@ public class MypageActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //뒤로가기버튼
         btn_Back2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
