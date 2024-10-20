@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,10 +15,13 @@ public class LoginActivity extends AppCompatActivity {
     Button btn_login,btn_register ;
     EditText et_email;
     EditText et_pwd;
+    private DBHelper dbHelper;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        dbHelper = new DBHelper(this);
 
         et_email = (EditText) findViewById(R.id.et_email);
         et_pwd = (EditText) findViewById(R.id.et_pwd);
@@ -28,8 +32,25 @@ public class LoginActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-                startActivity(intent);
+                String id = et_email.getText().toString().trim();
+                String password = et_pwd.getText().toString().trim();
+
+                // 입력 필드가 비어있는지 확인
+                if (id.isEmpty() || password.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "모두 입력해주세요!", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    // 데이터베이스에서 사용자 확인
+                    if (dbHelper.checkUser(id, password)) {
+                        // 로그인 성공 시 새로운 화면으로 이동
+                        Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                        startActivity(intent);
+                        finish(); // 로그인 화면 종료
+                    } else {
+                        // 로그인 실패 시 토스트 메시지 출력
+                        Toast.makeText(LoginActivity.this, "이메일 또는 비밀번호가 일치하지 않습니다.", Toast.LENGTH_SHORT).show();
+                    }
+                }
             }
         });
        //회원가입 버튼
