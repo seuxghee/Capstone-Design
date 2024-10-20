@@ -47,7 +47,7 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //Mypage 액티비티로 이동
+        //Mypage 액티비티로 이동 버튼
         btn_myinfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

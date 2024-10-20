@@ -71,6 +71,7 @@ public class DictionaryActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //뒤로가기 버튼
         btn_Back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){

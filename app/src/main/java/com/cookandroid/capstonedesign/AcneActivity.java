@@ -36,7 +36,7 @@ public class AcneActivity extends AppCompatActivity {
             th.addTab(tap3);
 
             th.setCurrentTab(0);
-
+            // 뒤로가기 버튼
             btn_Back4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
