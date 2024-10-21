@@ -1,6 +1,5 @@
 package com.cookandroid.capstonedesign;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class LoginActivity extends AppCompatActivity {
 
     Button btn_login,btn_register ;
-    EditText et_email;
+    EditText et_id;
     EditText et_pwd;
     private DBHelper dbHelper;
 
@@ -23,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
 
         dbHelper = new DBHelper(this);
 
-        et_email = (EditText) findViewById(R.id.et_email);
+        et_id = (EditText) findViewById(R.id.et_id);
         et_pwd = (EditText) findViewById(R.id.et_pwd);
         btn_login = (Button) findViewById(R.id.btn_login);
         btn_register = (Button) findViewById(R.id.btn_register);
@@ -32,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                String id = et_email.getText().toString().trim();
+                String id = et_id.getText().toString().trim();
                 String password = et_pwd.getText().toString().trim();
 
                 // 입력 필드가 비어있는지 확인
@@ -48,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
                         finish(); // 로그인 화면 종료
                     } else {
                         // 로그인 실패 시 토스트 메시지 출력
-                        Toast.makeText(LoginActivity.this, "이메일 또는 비밀번호가 일치하지 않습니다.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "아이디 또는 비밀번호가 일치하지 않습니다.", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

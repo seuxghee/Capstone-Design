@@ -115,7 +115,7 @@
         app:layout_constraintVertical_bias="1.0">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_email"
+            android:id="@+id/et_id"
             android:layout_width="339dp"
             android:layout_height="51dp"
             android:background="@drawable/line_sample"
