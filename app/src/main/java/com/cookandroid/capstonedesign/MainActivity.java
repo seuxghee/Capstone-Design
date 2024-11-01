@@ -22,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent); //처음 시작화면
+
             }
         }, 4000);
+
     }
 }
