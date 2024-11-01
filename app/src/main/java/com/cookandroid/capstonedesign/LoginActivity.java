@@ -14,13 +14,13 @@ public class LoginActivity extends AppCompatActivity {
     Button btn_login,btn_register ;
     EditText et_id;
     EditText et_pwd;
-    private DBHelper dbHelper;
+    private SQLHelper dbHelper;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        dbHelper = new DBHelper(this);
+        dbHelper = new SQLHelper(this);
 
         et_id = (EditText) findViewById(R.id.et_id);
         et_pwd = (EditText) findViewById(R.id.et_pwd);

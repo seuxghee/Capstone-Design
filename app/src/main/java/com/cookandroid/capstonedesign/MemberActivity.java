@@ -13,7 +13,7 @@ public class MemberActivity extends AppCompatActivity {
 
     Button btn_Registor, btn_Back, btn_Reset;
     EditText txtId, txtEmail, txtPw, txtPwc;
-    DBHelper dbHelper;
+    SQLHelper dbHelper;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class MemberActivity extends AppCompatActivity {
          txtPw = (EditText) findViewById(R.id.txtPw);
          txtPwc = (EditText) findViewById(R.id.txtPwc);
 
-        dbHelper = new DBHelper(this);
+        dbHelper = new SQLHelper(this);
 
         //등록 버튼
         btn_Registor.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +44,7 @@ public class MemberActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "모두 입력해주세요!", Toast.LENGTH_SHORT).show();
                 } else {
                     // SQLite에 회원 정보 저장
-                    dbHelper.insertUser(id, password);
+                    dbHelper.insertUser(id, email, password);
 
                     // 회원가입 성공 메시지 표시
                     Toast.makeText(getApplicationContext(), "회원가입 성공!", Toast.LENGTH_SHORT).show();
