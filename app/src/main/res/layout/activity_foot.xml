@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2E2F8" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FEF7FF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cause"
+                        android:layout_width="match_parent"
+                        android:layout_height="436dp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="환자의 피부에 직접적으로 접촉하거나 수영장, 공중 목욕탕의 발 수건, 신발 등에 접촉하여 감염될 수 있어요. 무좀 환자의 인설에는 곰팡이가 많이 포함되어 있어서, 목욕탕처럼 사람이 맨발로 많이 모이는 곳에서는 환자에게서 떨어져 나온 인설을 통해 발에서 발로 전염되기 쉬워요. 습도나 걸으면서 생기는 자극 등으로 인해 피부 손상이 발생하면 감염될 가능성이 커져요. 당뇨병이나 만성 질환이 있는 경우 감염될 위험이 더 커져요. "
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="153dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/icon1" />
+
+                    <Button
+                        android:id="@+id/btn_Back4"
+                        android:layout_width="62dp"
+                        android:layout_height="57dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="51dp"
+                        android:backgroundTint="#FAF8FA"
+                        android:gravity="center"
+                        android:singleLine="false"
+                        android:text="◀"
+                        android:textColor="#F2E2F8"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        tools:layout_editor_absoluteX="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FEF7FF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:padding="20dp"
+                        android:text="염증 없이 발가락 사이가 갈리지고 껍질이 벗겨지는 지간형, 발바닥이나 발 옆에 소수포가 발생하는 소수포형, 발바닥 전체에 걸쳐서 정상 피부색의 각질이 두꺼워지며 고운 가루처럼 떨어지는 각화형이 있어요. 대게는 각 형태가 복합적으로, 한꺼번에 발생해요. "
+                        android:textAlignment="gravity"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="153dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/icon1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FEF7FF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="379dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:padding="20dp"
+                        android:text="항진균제에 연고를 발라 치료해요. 증상 부위와 그 주변부에 1~2회 정도 연고를 바르면 돼요. 다 나은 것 같아도 3~4주간 계속 더 바르는 것이 재발 방지에 도움이 돼요. 항진균제 연고는 스테로이드호르몬 제제와는 달리 상당 기간 발라도 부작용이 거의 없어요.  "
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="153dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/icon1" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>

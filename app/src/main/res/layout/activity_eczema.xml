@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2E2F8" >
+
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FEF7FF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cause"
+                        android:layout_width="match_parent"
+                        android:layout_height="436dp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="습진은 직업성 피부염의 80% 이상을 차지하는 주된 원인이에요. 습한 환경에 노출되는 직업일수록 손의 습진 발생률이 높아요. 따라서 물이나 세제 같은 자극물질이 피부 각질층애 손상을 입혀서 피부의 보호 장벽이 손상되고 생기기 쉬워요. 습도가 낮은 것은 모두 습진의 위험 인자에요. 습도가 낮은 경우 알레르기 유발 물질이나 자극 물질의 자극 물질의 투과를 증가 시키며, 피부 장벽을 손상시켜서 습진을 유발할 수 있어요."
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="153dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/icon1" />
+
+                    <Button
+                        android:id="@+id/btn_Back4"
+                        android:layout_width="62dp"
+                        android:layout_height="57dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="51dp"
+                        android:backgroundTint="#FAF8FA"
+                        android:gravity="center"
+                        android:singleLine="false"
+                        android:text="◀"
+                        android:textColor="#F2E2F8"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        tools:layout_editor_absoluteX="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FEF7FF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:padding="20dp"
+                        android:text="습진이 발생한 초기에는 가려움과 함께 물질과 구진이 발생하고, 이것들이 붉어지고 부어올라요. 시간이 지나면서 붓는 증세와 물질은 점차 줄어들어요. 대신 피부 주름이 늘어나며, 피부가 두꺼워지기도 하고 색소 침착이 나타나기도 하고 점점 피부가 갈라져요. 심한 경우 출혈이 발생하기도 해요. 드물게는 흉터가 생기기도 해요."
+                        android:textAlignment="gravity"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="153dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/icon1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FEF7FF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:padding="20dp"
+                        android:text="습진을 유발하는 환경에서 벗어나야 해요. 병원 치료는 비정상적인 습진은 예전의 피부로 돌아가게 하는 것이지, 피부가 물이나 세제에 강하도록 해주는 것이 아니기 때문에, 치료 후에 다시 집안일을 반복하여 손이 마를 일이 없게 되거나,세제 등으로 피부에 자극을 주는 행위를 지속하면 습진을 치료할 수 없어요. 물에 젖는 일을 할 때 비닐장갑을 착용하면 도움이 되지만, 장갑 밑에 땀이 차서 피부가 짓무를 수 있어요. 장갑 속에 흰 면장갑을 착용하는 것이 도움이 돼요. 피부염 치료에는 보습이 매우 중요하므로, 수시로 보습 크림이나 연고를 발라야 해요."
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="153dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/icon1" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>

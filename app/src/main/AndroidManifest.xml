@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,12 +20,27 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".HomeActivity"/>
+        <activity android:name=".CameraActivity"/>
+        <activity android:name=".DictionaryActivity"/>
+        <activity android:name=".MapActivity"/>
+        <activity android:name=".MypageActivity"/>
+        <activity android:name=".MemberActivity"/>
+        <activity android:name=".AcneActivity"/>
+        <activity android:name=".UrticariaActivity"/>
+        <activity android:name=".AllergyActivity"/>
+        <activity android:name=".EczemaActivity"/>
+        <activity android:name=".FootActivity"/>
+        <activity android:name=".MyinfoActivity"/>
+        <activity android:name=".QAActivity"/>
     </application>
 
 </manifest>
