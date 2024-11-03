@@ -50,7 +50,7 @@ public class SQLHelper extends SQLiteOpenHelper {
         db.close();
     }
 
-    // 이메일과 비밀번호 확인 메서드는 동일
+    // 이메일과 비밀번호 확인 메서드
     public boolean checkUser(String email, String password) {
         SQLiteDatabase db = this.getReadableDatabase();
         String query = "SELECT * FROM " + TABLE_USER + " WHERE " + COLUMN_ID + " = ? AND " + COLUMN_PASSWORD + " = ?";
