@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
-
+    
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
+
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -34,12 +35,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity android:name=".MapActivity"/>
         <activity android:name=".LoginActivity"/>
         <activity android:name=".HomeActivity"/>
         <activity android:name=".CameraActivity"/>
         <activity android:name=".DictionaryActivity"/>
-        <activity android:name=".MapActivity"/>
+
         <activity android:name=".MypageActivity"/>
         <activity android:name=".MemberActivity"/>
         <activity android:name=".AcneActivity"/>
@@ -49,6 +52,7 @@
         <activity android:name=".FootActivity"/>
         <activity android:name=".MyinfoActivity"/>
         <activity android:name=".QAActivity"/>
+
     </application>
 
 </manifest>
