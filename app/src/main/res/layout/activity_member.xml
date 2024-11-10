@@ -119,7 +119,7 @@
         android:id="@+id/txtId"
         android:layout_width="303dp"
         android:layout_height="46dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="128dp"
         android:background="@drawable/edittext_rounded_corner_rectangle"
         android:backgroundTint="#F2E2F8"
         android:ems="10"
@@ -129,35 +129,20 @@
         android:textColor="#FDF4FD"
         android:textColorHint="#FDF4FD"
         android:textSize="24sp"
+        android:privateImeOptions="defaultInputmode=english"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
 
-    <EditText
-        android:id="@+id/txtPwc"
-        android:layout_width="301dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/edittext_rounded_corner_rectangle"
-        android:backgroundTint="#F2E2F8"
-        android:ems="10"
-        android:fontFamily="@font/mitme"
-        android:hint="비밀번호 확인"
-        android:inputType="textPassword"
-        android:textColor="#FDF4FD"
-        android:textColorHint="#FDF4FD"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.581"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPw" />
+
+    />
 
     <EditText
         android:id="@+id/txtEmail"
         android:layout_width="301dp"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/edittext_rounded_corner_rectangle"
         android:backgroundTint="#F2E2F8"
         android:ems="10"
@@ -195,23 +180,6 @@
         app:passwordToggleEnabled="true" />
 
     <Button
-        android:id="@+id/btn_Registor"
-        android:layout_width="149dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="56dp"
-        android:backgroundTint="#F2E2F8"
-        android:fontFamily="@font/mitme"
-        android:text="회원가입"
-        android:textAlignment="center"
-        android:textColor="#FAF8FA"
-        android:textSize="20sp"
-        app:cornerRadius="0.5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.224"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPwc" />
-
-    <Button
         android:id="@+id/btn_Reset"
         android:layout_width="154dp"
         android:layout_height="51dp"
@@ -224,9 +192,26 @@
         android:textSize="20sp"
         app:cornerRadius="0.3dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintHorizontal_bias="0.817"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPwc" />
+        app:layout_constraintTop_toBottomOf="@+id/RadioSex" />
+
+    <Button
+        android:id="@+id/btn_Registor"
+        android:layout_width="149dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#F2E2F8"
+        android:fontFamily="@font/mitme"
+        android:text="회원가입"
+        android:textAlignment="center"
+        android:textColor="#FAF8FA"
+        android:textSize="20sp"
+        app:cornerRadius="0.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RadioSex" />
 
     <Button
         android:id="@+id/btn_Back"
@@ -240,5 +225,68 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="27dp" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="301dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:backgroundTint="#F2E2F8"
+        android:ems="10"
+        android:fontFamily="@font/mitme"
+        android:hint="이름"
+        android:inputType="text"
+        android:privateImeOptions="defaultInputmode=korean"
+        android:textColor="#FDF4FD"
+        android:textColorHint="#FDF4FD"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPw" />
+
+    <RadioGroup
+        android:id="@+id/RadioSex"
+        android:layout_width="305dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBirth">
+
+        <RadioButton
+            android:id="@+id/radioMan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남자" />
+
+        <RadioButton
+            android:id="@+id/radioWoman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여자" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txtBirth"
+        android:layout_width="301dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:backgroundTint="#F2E2F8"
+        android:ems="10"
+        android:fontFamily="@font/mitme"
+        android:hint="생년월일 8자리"
+        android:textColor="#FDF4FD"
+        android:inputType="number"
+        android:textColorHint="#FDF4FD"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

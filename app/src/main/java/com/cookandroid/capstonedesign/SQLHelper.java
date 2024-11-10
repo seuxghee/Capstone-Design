@@ -15,6 +15,9 @@ public class SQLHelper extends SQLiteOpenHelper {
     private static final String COLUMN_ID = "id";
     private static final String COLUMN_EMAIL = "email";
     private static final String COLUMN_PASSWORD = "password";
+    private static final String COLUMN_NAME = "name";
+    private static final String COLUMN_BIRTH = "birth";
+    private static final String COLUMN_GENDER = "gender";
 
 
     public SQLHelper(Context context) {
@@ -26,7 +29,10 @@ public class SQLHelper extends SQLiteOpenHelper {
         String CREATE_USER_TABLE = "CREATE TABLE " + TABLE_USER + "("
                 + COLUMN_ID +  " TEXT PRIMARY KEY,"
                 + COLUMN_EMAIL + " TEXT,"
-                + COLUMN_PASSWORD + " TEXT"
+                + COLUMN_PASSWORD + " TEXT,"
+                + COLUMN_NAME + " TEXT,"
+                + COLUMN_BIRTH + " INTEGER,"
+                + COLUMN_GENDER + " TEXT"
                 + ")";
         db.execSQL(CREATE_USER_TABLE);
     }
@@ -36,14 +42,45 @@ public class SQLHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_USER);
         onCreate(db);
     }
+    // id 중복 확인 메서드
+    public boolean isUserIdExists(String id) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.query(TABLE_USER,
+                new String[]{COLUMN_ID},
+                COLUMN_ID + " = ?",
+                new String[]{id},
+                null, null, null);
+
+        boolean exists = (cursor.getCount() > 0); // 중복 여부 확인
+        cursor.close();
+        db.close();
+        return exists;
+    }
+    // 이메일 중복 확인 메서드
+    public boolean isEmailExists(String email) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.query(TABLE_USER,
+                new String[]{COLUMN_EMAIL},
+                COLUMN_EMAIL + " = ?",
+                new String[]{email},
+                null, null, null);
+
+        boolean exists = (cursor.getCount() > 0);
+        cursor.close();
+        db.close();
+        return exists;
+    }
 
     // 회원 정보 삽입 메서드 (추가된 필드 포함)
-    public void insertUser(String id, String email, String password) {
+    public void insertUser(String id, String email, String password, String name, String birth, String gender) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(COLUMN_ID, id);
         values.put(COLUMN_EMAIL, email);
         values.put(COLUMN_PASSWORD, password);
+        values.put(COLUMN_NAME, name);
+        values.put(COLUMN_BIRTH, birth);
+        values.put(COLUMN_GENDER, gender);
 
 
         db.insert(TABLE_USER, null, values);
