@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEF7FF"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".QAActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/mitme"
+            android:text="QA"
+            android:textAlignment="center"
+            android:textColor="#F2E2F8"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Q. 진단 결과가 예상과 다르게 나왔어요."
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A. 진단 결과가 예상과 다르게 나오면 나온 진단 결과를 저희 스프톡 백과사전에 검색하셔셔 보면 보다 더 자세한 결과에 대해 확인하는데 도움이 될 것입니다." />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Q. 피부진단 결과를 어디서 확인할 수 있나요?"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A. 네. 진단 받고 싶은 부위를 촬영 하게 되면 피부진단 결과가 병명과 확률을 카메라 하단부분에서 바로 확인하실 수 있습니다." />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Q. 개인의 사진과 진단 정보는 어떻게 보관 되나요?"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A. 앱 내의 자체 데이터베이스에 모든 정보가 저장이되며 보관됩니다." />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Q. 피부 진단을 받기 위해 사진은 어떻게 찍어야 하나요?"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A. 네. 진단 받고 싶은 부위와 카메라를 15cm 이상 거리에서 잘 나오게 찍어주세요." />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Q. 앱을 재설치하면 기존 데이터는 어떻게 되나요?"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A. 네. 회원을 탈퇴하지 않는 이상 삭제하고 재설치하셔도 기존 데이터는 앱 내의 자체 데이터베이스에 보관되어 있어 기존 데이터를 보실 수 있습니다." />
+
+        <Button
+            android:id="@+id/btn_Back5"
+            android:layout_width="68dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="81dp"
+            android:backgroundTint="#FAF8FA"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="◀"
+            android:textColor="#F2E2F8"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="35dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2E2F8" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FEF7FF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cause"
+                        android:layout_width="match_parent"
+                        android:layout_height="436dp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="호르몬 변화, 세균 감염, 유전성 요인등으로 발생한다고 여기지지만, 아직까지는 정확한 원인을 모르는 상태에요.   대체로 사춘기에 나타나는 여드름은 안드로겐이라는 남성호르몬에 자극받아 피지를 과다하게 내보내서 발생하지만   성인 여드름은 여성에게 많이 나타나며, 특히 생리 전에 주기적으로 악화돼요.   프로게스테론이라는 황체호르몬, 기름이 많거나 털구멍을 밀폐시키는 화장품 등이 원인 또는 악화 인자가 될 수 있어요. 정서적 건강이나 스트레스, 수면 부족 등으로 부산피질 호르몬이 분비되어 피지선을 자극하면 여드름이 발생해요."
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="153dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/icon1" />
+
+                    <Button
+                        android:id="@+id/btn_Back4"
+                        android:layout_width="62dp"
+                        android:layout_height="57dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="51dp"
+                        android:backgroundTint="#FAF8FA"
+                        android:gravity="center"
+                        android:singleLine="false"
+                        android:text="◀"
+                        android:textColor="#F2E2F8"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        tools:layout_editor_absoluteX="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FEF7FF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:padding="20dp"
+                        android:text="면포, 구진, 농포 등이 나타나고 심한 경우에는 결절이나 낭종이 생겨요.  면포란 피지가 축전되어 모낭이 팽창한 것이에요. 면포에는 모낭 입구가 열려 있어요.  면포에는 개방 면포와 패쇄 면포라는 두가지 종류가 있어요.  흔히 블랙헤드라고도 하는 개방 면포는 그간 축전되 피지의 색이 검게 보이는 것이에요.  패쇄면포는 표면이 닫혀 있는 면포로, 흔히 화이트헤드하고 해요. 면포가 오래되면 주위에 세균이 증식하고,  그 주위에 염증 세포가 모이면 붉은 여드름 구진, 곪는 여드름 농포를 형성해요.  이 정도가 심해지면 결절과 낭종 등이 부어있는 상태가 되기도해요."
+                        android:textAlignment="gravity"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="153dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/icon1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FEF7FF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="309dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:padding="20dp"
+                        android:text="크게 바르는 약, 먹는 약, 외과적 치료로 나눌 수 있어요. 여드름을 치료하는 방법은 모낭을 제거하여 피지가 잘 배출되독록 하거나, 세균의 성장과 염증, 피지 분비를 억제하는 것이에요.  부작용이 있으니 의사의 처방이 필요해요. 외과적인 치료로는 증상 부위에 대한 주사 요법, 여드름 압출 치료, 박피술, 레이저 치료, 광역등 치료등이 있어요."
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="153dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/icon1" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>
