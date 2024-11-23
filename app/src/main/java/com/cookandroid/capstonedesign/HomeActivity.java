@@ -50,10 +50,13 @@ public class HomeActivity extends AppCompatActivity {
         });
         //Mypage 액티비티로 이동 버튼
         btn_myinfo.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MypageActivity.class);
-                startActivity(intent);
+
+                // 이메일을 MypageActivity로 전달
+                Intent myPageIntent = new Intent(getApplicationContext(), MypageActivity.class);
+                startActivity(myPageIntent);
             }
         });
     }

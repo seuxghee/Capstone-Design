@@ -29,9 +29,9 @@ public class MemberActivity extends AppCompatActivity {
          btn_Back = (Button) findViewById(R.id.btn_Back);
          //텍스트박스
          txtId = (EditText) findViewById(R.id.txtId);
-         txtEmail = (EditText) findViewById(R.id.txtEmail);
+         txtEmail = (EditText) findViewById(R.id.txtUserId);
          txtPw = (EditText) findViewById(R.id.txtPw);
-         txtName = (EditText) findViewById(R.id.txtName);
+         txtName = (EditText) findViewById(R.id.txtUserName);
          txtBirth = (EditText) findViewById(R.id.txtBirth);
          //레디오버튼
          RadioSex = (RadioGroup) findViewById(R.id.RadioSex);

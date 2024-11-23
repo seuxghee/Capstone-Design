@@ -27,7 +27,7 @@ public class SQLHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_USER_TABLE = "CREATE TABLE " + TABLE_USER + "("
-                + COLUMN_ID +  " TEXT PRIMARY KEY,"
+                + COLUMN_ID + " TEXT PRIMARY KEY,"
                 + COLUMN_EMAIL + " TEXT,"
                 + COLUMN_PASSWORD + " TEXT,"
                 + COLUMN_NAME + " TEXT,"
@@ -42,6 +42,7 @@ public class SQLHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_USER);
         onCreate(db);
     }
+
     // id 중복 확인 메서드
     public boolean isUserIdExists(String id) {
         SQLiteDatabase db = this.getReadableDatabase();
@@ -56,6 +57,7 @@ public class SQLHelper extends SQLiteOpenHelper {
         db.close();
         return exists;
     }
+
     // 이메일 중복 확인 메서드
     public boolean isEmailExists(String email) {
         SQLiteDatabase db = this.getReadableDatabase();

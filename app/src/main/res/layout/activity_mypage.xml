@@ -52,20 +52,11 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/txtUserId"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/mitme"
-            android:text="name: "
-            android:textColor="#F2E2F8"
-            android:textSize="34sp" />
-
-        <TextView
-            android:id="@+id/textView23"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/mitme"
-            android:text="E-mail:"
+            android:text="Id :"
             android:textColor="#F2E2F8"
             android:textSize="34sp" />
 
