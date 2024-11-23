@@ -55,6 +55,7 @@
             android:id="@+id/txtUserId"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="80dp"
             android:fontFamily="@font/mitme"
             android:text="Id :"
             android:textColor="#F2E2F8"
@@ -66,18 +67,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
-        <Button
-            android:id="@+id/btn_Myinfo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="10dp"
-            android:backgroundTint="#F2E2F8"
-            android:text="Myinfo"
-            android:textColor="#FAF8FA"
-            android:textSize="24sp"
-            app:cornerRadius="0.3dp" />
 
         <Button
             android:id="@+id/btn_QA"

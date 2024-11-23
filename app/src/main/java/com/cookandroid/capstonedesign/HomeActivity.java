@@ -53,9 +53,11 @@ public class HomeActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
+                Intent intent = getIntent();
+                String id = intent.getStringExtra("userId");
 
-                // 이메일을 MypageActivity로 전달
                 Intent myPageIntent = new Intent(getApplicationContext(), MypageActivity.class);
+                intent.putExtra("userId", id); // 아이디를 전달
                 startActivity(myPageIntent);
             }
         });

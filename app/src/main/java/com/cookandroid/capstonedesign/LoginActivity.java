@@ -44,8 +44,8 @@ public class LoginActivity extends AppCompatActivity {
                     // 데이터베이스에서 사용자 확인
                     if (dbHelper.checkUser(id, password)) {
 
-
                         Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                        intent.putExtra("userId", id); // 아이디를 전달
                         startActivity(intent);
                         finish(); // 로그인 화면 종료
 
